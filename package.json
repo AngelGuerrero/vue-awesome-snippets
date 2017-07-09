@@ -1,0 +1,26 @@
+{
+  "name": "vue-awesome-snippets",
+  "main": "./lib/vue-awesome-snippets",
+  "version": "0.0.0",
+  "description": "Snippets for create awesome Vue applications.",
+  "keywords": [
+    "vue",
+    "vue.js",
+    "components",
+    "snippets",
+    "awesome"
+  ],
+  "activationCommands": {
+    "atom-workspace": "vue-awesome-snippets:toggle"
+  },
+  "repository": "https://github.com/AngelGuerrero/vue-awesome-snippets",
+  "license": "MIT",
+  "author": {
+    "name": "Luis Ángel De Santiago Guerrero"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

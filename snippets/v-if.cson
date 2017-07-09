@@ -1,0 +1,56 @@
+#---------------------------------------------------------------------
+# Components for Vue.js in HTML
+#---------------------------------------------------------------------
+# Directive v-if
+# ------------------------------------------------------------------
+'.text.html':
+  'v-if struture':
+    'description': 'Create a block of HTML with the v-if directive'
+    'prefix': 'vif'
+    'body': """
+    <${1:tag} v-if='${2:condition}'>
+      ${3:}
+    </${1:tag}>
+    """
+
+  'Block v-if v-else':
+    'description': 'Create a block of HTML with the if else structure in vue'
+    'prefix': 'vifel'
+    'body': """
+    <${1:} v-if="${2:}">$4</${1:}>
+    <${3:} v-else>$5</${3:}>${6:}
+    """
+
+  'v-if directive inline':
+    'description': 'Write the directive inside a tag'
+    'prefix': 'vifin'
+    'body': """
+    v-if='${1:condition}'${2:}
+    """
+
+  'v-if structure with an id':
+    'description': 'Create a block of HTML adding an id attribute'
+    'prefix': 'vifid'
+    'body': """
+    <${1:tag} v-if='${2:condition}' id="${3:your id}" >
+      ${4:}
+    </${1:tag}>
+    """
+
+  'v-if structure with a class':
+    'description': 'Create a block of HTML adding a class attribute'
+    'prefix': 'vifclass'
+    'body': """
+    <${1:your tag} v-if='${2:condition}' class="${3:your class}">
+      ${4:}
+    </${1:your tag}>
+    """
+
+  'v-if structure with an id and class':
+    'description': 'Create a block of HTML adding an id and a class attribute'
+    'prefix': 'vifidclass'
+    'body': """
+    <${1:your tag} v-if='${2:condition}' id="${3:your id}" class="${4:your class}">
+      ${5:}
+    </${1:your tag}>
+    """
