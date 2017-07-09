@@ -1,7 +1,7 @@
 {
   "name": "vue-awesome-snippets",
   "main": "./lib/vue-awesome-snippets",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Snippets for create awesome Vue applications.",
   "keywords": [
     "vue",
@@ -21,6 +21,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
