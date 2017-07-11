@@ -1,0 +1,21 @@
+#---------------------------------------------------------------------
+# Snippets of Vue.js for HTML files
+#---------------------------------------------------------------------
+# Templates
+# ------------------------------------------------------------------
+'.text.html':
+  'Create a new vue template':
+    'description': 'Create a template'
+    'prefix': 'vtem'
+    'body': """
+    <!-- ${1:'Put a comment'} -->
+    <${2:'template name'}>${3}</${2:'template name'}>
+    """
+
+  'Create a vue template with data':
+    'description': 'Create a vue template with data'
+    'prefix': 'vtemd'
+    'body': """
+    <!-- ${1:'Put a comment'} -->
+    <${2:'template name'} ${3}></${2:'template name'}>
+    """

@@ -1,0 +1,28 @@
+#---------------------------------------------------------------------
+# Components for Vue.js in HTML
+#---------------------------------------------------------------------
+# Directive v-model
+# ------------------------------------------------------------------
+'.text.html':
+
+  'v-model structure':
+    'description': 'Create a block of HTML with the v-model directive'
+    'prefix': 'vmo'
+    'body': """
+    <${1:tag} v-model='${2:name}'>${3:}</${1:tag}>
+    """
+
+  'v-model directive inline':
+    'description': 'vudes'
+    'prefix': 'vmoin'
+    'body': """
+    v-model='${1:name}'${2:}
+    """
+
+
+  'v-model with input structure':
+    'description': 'Create a input tag with the v-model directive'
+    'prefix': 'vmoinput'
+    'body': """
+    <${1:tag} v-model='${2:name}' type:'${3:}' name='${4:}' value='${5:}'>${6:}</${1:tag}>
+    """

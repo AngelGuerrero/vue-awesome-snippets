@@ -1,0 +1,41 @@
+#---------------------------------------------------------------------
+# Components for Vue.js in HTML
+#---------------------------------------------------------------------
+# Directive v-bind
+# ------------------------------------------------------------------
+'.text.html':
+
+  'v-bind structure':
+    'description': 'Create a block of HTML with the v-bind directive'
+    'prefix': 'vbind'
+    'body': """
+    <${1:tag} v-bind:${2:target}='${3:function}'>${4:}</${1:tag}>
+    """
+
+  'v-bind short':
+    'description': 'Write the v-bind directive inside a tag'
+    'prefix': 'vbindin'
+    'body': """
+    v-bind:${1:target}='${2:function}'${3:}
+    """
+
+  'v-bind structure with an id':
+    'description': 'Create a block of HTML with v-bind directive adding an id attribute'
+    'prefix': 'vbindid'
+    'body': """
+    <${1:tag} v-bind:${2:target}='${3:function}' id="${4:your id}">${5:}</${1:tag}>
+    """
+
+  'v-bind structure with a class':
+    'description': 'Create a block of HTML with v-bind directive adding a class attribute'
+    'prefix': 'vbindclass'
+    'body': """
+    <${1:tag} v-bind:${2:target}='${3:function}' class="${4:your class}">${5:}</${1:tag}>
+    """
+
+  'v-bind structure with an id and a class':
+    'description': 'vuedesidclass'
+    'prefix': 'vbindidclass'
+    'body': """
+    <${1:tag} v-bind:${2:target}='${3:function}' id="${4:your id}" class="${5:your class}">${6:}</${1:tag}>
+    """

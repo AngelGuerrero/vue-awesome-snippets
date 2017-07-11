@@ -1,0 +1,40 @@
+#---------------------------------------------------------------------
+# Components for Vue.js in HTML
+#---------------------------------------------------------------------
+# Directive v-on
+# ------------------------------------------------------------------
+'.text.html':
+  'v-on structure':
+    'description': 'Create a block of HTML adding the directive v-on'
+    'prefix': 'von'
+    'body': """
+    <${1:tag} v-on:${2:event}='${3:function}'>${4:}</${1:tag}>
+    """
+
+  'v-on inline':
+    'description': 'Write the directive inside of the tag'
+    'prefix': 'vonin'
+    'body': """
+    v-on:${1:event}='${2:function}'${3:}
+    """
+
+  'v-on struture with an id':
+    'description': 'Create a block of HTML adding an id attribute'
+    'prefix': 'vonid'
+    'body': """
+    <${1:tag} v-on:${2:event}='${3:function}' id="${4:your id}">${5:}</${1:tag}>
+    """
+
+  'v-on structure with a class':
+    'description': 'Create a block of HTML adding a class attribute'
+    'prefix': 'vonclass'
+    'body': """
+    <${1:tag} v-on:${2:event}='${3:function}' class="${4:your class}">${5:}</${1:tag}>
+    """
+
+  'v-on structure with an id and a class':
+    'description': 'Create a block of HTML adding an id and class attribute'
+    'prefix': 'vonidclass'
+    'body': """
+    <${1:tag} v-on:${2:event}='${3:function}' id="${4:your id}" class="${5:your class}">${6:}</${1:tag}>
+    """

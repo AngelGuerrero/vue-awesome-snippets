@@ -1,0 +1,38 @@
+#---------------------------------------------------------------------
+# Snippets for Vue in Javascript
+#---------------------------------------------------------------------
+# Vue
+# ------------------------------------------------------------------
+'.source.js':
+
+  'New Vue':
+    'description': 'Create a new structure of Vue'
+    'prefix': 'vnew'
+    'body': """
+    var ${1:varname} = new Vue({
+        el: '${2:appname}',
+
+        data: {
+          ${3:}
+        },
+
+        methods: {
+          ${4:}
+        }
+      });
+    """
+
+  'New component':
+    'description': 'Create a new structure of component'
+    'prefix': 'vcom'
+    'body': """
+    Vue.component('${1:'component name'}', {
+      template: '${2:'your template'}',
+
+      data: function() {
+        return {
+          ${3}
+        }
+      }
+    });
+    """

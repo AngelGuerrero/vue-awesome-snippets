@@ -1,0 +1,47 @@
+#---------------------------------------------------------------------
+# Components for Vue.js in HTML
+#---------------------------------------------------------------------
+# v-for directive
+# ------------------------------------------------------------------
+'.text.html':
+  'v-for structure':
+    'description': 'Create a block of HTML with the v-for directive'
+    'prefix': 'vfor'
+    'body': """
+    <${1:tag} v-for='${2:val} in ${3:values}' >${4:}</${1:tag}>
+    """
+
+  'v-for directive inline':
+    'description': 'Write the directive inside a tag'
+    'prefix': 'vforin'
+    'body': """
+    v-for='${1:val} in ${2:values}'${3:}
+    """
+
+  'v-for directive with and id':
+    'description': 'Create a block of HTML adding an id attribute'
+    'prefix': 'vforid'
+    'body': """
+    <${1:tag} v-for='${2:val} in ${3:values}' id='${4:your id}' >${5:}</${1:tag}>
+    """
+
+  'v-for directive with a class':
+    'description': 'Create a block of HTML adding a class attribute'
+    'prefix': 'vforclass'
+    'body': """
+    <${1:tag} v-for='${2:val} in ${3:values}' class="${4:your class}" >${5:}</${1:tag}>
+    """
+
+  'v-for directive with an id and class':
+    'description': 'Create a block of HTML adding an id and a class attribute'
+    'prefix': 'vforidclass'
+    'body': """
+    <${1:tag} v-for='${2:val} in ${3:values}' id="${4:your id}" class="${5:your class}" >${6:}</${1:tag}>
+    """
+
+  'v-for directive with other data':
+    'description': 'Create a block of HTML and keep write inside the tag'
+    'prefix': 'vford'
+    'body': """
+    <${1:tag} v-for='${2:val} in ${3:values}' ${4:} >${5:}</${1:tag}>
+    """
